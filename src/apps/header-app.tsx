@@ -15,7 +15,7 @@ const featureAppDefinition: FeatureAppDefinition<ReactFeatureApp, HeaderFeatureS
         const randomService: RandomServiceV1 = featureServices['test:random-service'];
 
         const randomNumber = randomService.getRandomNumber();
-        const randomName = randomService.getRandomName();
+        const randomName = randomService.getRandomCarName();
 
         return {
             render: () => (<div style={{
@@ -26,7 +26,7 @@ const featureAppDefinition: FeatureAppDefinition<ReactFeatureApp, HeaderFeatureS
                 padding: '4px'
             }}>
                 <h3>Feature App Header!</h3>
-                <h3> Random Name: {randomName} </h3>
+                <h3> Random Car: {randomName} </h3>
                 <h3> Random Number: {randomNumber} </h3>
             </div>)
         }

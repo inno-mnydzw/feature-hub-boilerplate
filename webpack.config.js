@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const stylesHandler = 'style-loader';
 
 const config = {
-    stats: 'minimal',
+    stats: 'normal',
     entry: './src/bootstrap.tsx',
     output: {
         path: path.resolve(__dirname, 'dist'),
